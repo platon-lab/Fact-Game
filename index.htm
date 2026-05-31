@@ -99,6 +99,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            /* Дозволяємо листати вгору та вниз, якщо контенту багато */
+            overflow-y: auto;
+            padding: 20px 0;
+            box-sizing: border-box;
         }
 
         .hidden { display: none !important; }
@@ -161,7 +165,21 @@
             { name: "Fil", img: "Fil.png", type: "dog" },
             { name: "Junior", img: "Junior.png", type: "cat" },
             { name: "Milka", img: "Milka.png", type: "cat" },
-            { name: "Bark", img: "Bark.png", type: "dog" }
+            { name: "Bark", img: "Bark.png", type: "dog" },
+            { name: "Persik", img: "Persik.png", type: "pet" },
+            { name: "Spike", img: "Spike.png", type: "pet" },
+            { name: "Alyonka", img: "Alyonka.png", type: "pet" },
+            { name: "Lilu", img: "Lilu.png", type: "pet" },
+            { name: "Manya", img: "Manya.png", type: "pet" },
+            { name: "Liza", img: "Liza.png", type: "pet" },
+            { name: "Grivna", img: "Grivna.png", type: "pet" },
+            { name: "Ben", img: "Ben.png", type: "pet" },
+            { name: "Goldi", img: "Goldi.png", type: "pet" },
+            { name: "Raf", img: "Raf.png", type: "pet" },
+            { name: "Veles", img: "Veles.png", type: "pet" },
+            { name: "Masha", img: "Masha.png", type: "pet" },
+            { name: "Brilliantik", img: "Brilliantik.png", type: "pet" },
+            { name: "Richik", img: "Richik.png", type: "pet" }
         ];
 
         let score = 0;
@@ -180,7 +198,22 @@
             { q: "Чи правда, що {name} пітніє через язик та подушечки лап?", a: true },
             { q: "Чи можна давати {name} пити тільки молоко замість води?", a: false },
             { q: "Якщо {name} крутиться на місці перед сном, це інстинкт предків?", a: true },
-            { q: "{name} відчуває твій настрій, навіть якщо ти мовчиш?", a: true }
+            { q: "{name} відчуває твій настрій, навіть якщо ти мовчиш?", a: true },
+            // ДОДАТКОВІ НОВІ ФАКТИ
+            { q: "Чи правда, що нюх у {name} у тисячі разів гостріший, ніж у людини?", a: true },
+            { q: "Чи можна {name} постійно годувати солоною рибою та чипсами?", a: false },
+            { q: "Чи правда, що {name} бачить сни, коли спить і посмикує лапками?", a: true },
+            { q: "Якщо {name} підтискає хвоста, це означає, що він дуже радіє?", a: false },
+            { q: "Чи вміє {name} чути ультразвуки, які не чують люди?", a: true },
+            { q: "Чи правда, що {name} може розганятися до швидкості машини на коротких дистанціях?", a: true },
+            { q: "Якщо {name} мружить очі, дивлячись на тебе, це знак довіри та любові?", a: true },
+            { q: "Чи корисно для {name} пити газовану солодку воду?", a: false },
+            { q: "Чи правда, що візерунок на носі у {name} унікальний, як відбиток пальця у людини?", a: true },
+            { q: "Чи може {name} навчитися відчиняти двері, натискаючи на ручку?", a: true },
+            { q: "Чи правда, що {name} любить грати в комп'ютерні ігри на телефоні?", a: false },
+            { q: "Якщо {name} лягає спиною на підлогу і показує пузико, це означає повну довіру?", a: true },
+            { q: "Чи безпечно для {name} жувати кімнатні рослини без розбору?", a: false },
+            { q: "Чи правда, що {name} чує шурхіт пакета з їжею навіть з іншої кімнати?", a: true }
         ];
 
         function updateRecordDisplay() {
